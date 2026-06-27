@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | EduAbleNet</title>
+
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h2>EduAbleNet</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li class="active"><a href="#"><i class="fa-solid fa-file-circle-question"></i> Quiz</a></li>
+
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>Quiz Interaktif</h1>
+
+                <p>Jawab pertanyaan berikut.</p>
+
+            </div>
+
+        </div>
+
+        <div class="quiz-card">
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <h2 id="question">
+
+                Loading...
+
+            </h2>
+
+            <div id="answers">
+
+            </div>
+
+            <button id="nextBtn">
+
+                Soal Berikutnya →
+
+            </button>
+
+        </div>
+
+        <div class="result" id="result">
+
+            <h2>
+
+                🎉 Selamat
+
+            </h2>
+
+            <h1 id="score">
+
+                0
+
+            </h1>
+
+            <p>
+
+                Jawaban Benar
+
+            </p>
+
+            <button onclick="location.reload()">
+
+                Ulangi Quiz
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="../assets/js/quiz.js"></script>
+
+</body>
+
+</html>

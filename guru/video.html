@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Learning | EduAbleNet</title>
+
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/video.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h2>EduAbleNet</h2>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+
+<li><a href="materi.html"><i class="fa-solid fa-book"></i>Materi</a></li>
+
+<li class="active"><a href="#"><i class="fa-solid fa-video"></i>Video</a></li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<div class="topbar">
+
+<div>
+
+<h1>Video Learning 🎥</h1>
+
+<p>Kumpulan video pembelajaran untuk peserta didik SLB.</p>
+
+</div>
+
+</div>
+
+<div class="video-player">
+
+<video id="videoPlayer" controls poster="../assets/images/matematika.jpg">
+
+<source src="../assets/videos/matematika.mp4" type="video/mp4">
+
+</video>
+
+<h2 id="videoTitle">
+
+Mengenal Angka 1 - 20
+
+</h2>
+
+<p>
+
+Video pembelajaran interaktif.
+
+</p>
+
+</div>
+
+<h2 class="playlist-title">
+
+Playlist Video
+
+</h2>
+
+<div class="playlist">
+
+<div class="video-card"
+
+onclick="changeVideo('../assets/videos/matematika.mp4','Mengenal Angka 1-20')">
+
+<img src="../assets/images/matematika.jpg">
+
+<div>
+
+<h3>Mengenal Angka</h3>
+
+<p>12 Menit</p>
+
+</div>
+
+</div>
+
+<div class="video-card"
+
+onclick="changeVideo('../assets/videos/bahasa.mp4','Mengenal Huruf')">
+
+<img src="../assets/images/bahasa.jpg">
+
+<div>
+
+<h3>Mengenal Huruf</h3>
+
+<p>8 Menit</p>
+
+</div>
+
+</div>
+
+<div class="video-card"
+
+onclick="changeVideo('../assets/videos/hewan.mp4','Mengenal Hewan')">
+
+<img src="../assets/images/hewan.jpg">
+
+<div>
+
+<h3>Mengenal Hewan</h3>
+
+<p>10 Menit</p>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="../assets/js/video.js"></script>
+
+</body>
+
+</html>
