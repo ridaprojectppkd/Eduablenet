@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Materi | EduAbleNet</title>
+
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/detail-materi.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+  <!-- Audio Test -->
+<script src="../assets/js/speech.js"></script>
+
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>EduAbleNet</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+            <li class="active"><a href="materi.html"><i class="fa-solid fa-book"></i> Materi</a></li>
+
+            <li><a href="cp.html"><i class="fa-solid fa-list-check"></i> CP & TP</a></li>
+
+            <li><a href="video.html"><i class="fa-solid fa-video"></i> Video</a></li>
+
+            <li><a href="quiz.html"><i class="fa-solid fa-file-circle-question"></i> Quiz</a></li>
+
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>Mengenal Angka 1 - 20</h1>
+
+                <p>Matematika • Fase A</p>
+
+            </div>
+
+        </div>
+
+        <!-- Banner -->
+
+        <section class="banner">
+
+            <img src="../assets/images/matematika.jpg">
+
+        </section>
+
+        <!-- Informasi -->
+
+        <section class="info-grid">
+
+            <div class="left">
+
+                <div class="card">
+
+                    <h2>
+                        📖 Deskripsi Materi
+                    </h2>
+
+                    <p>
+
+                        Materi ini membantu peserta didik mengenal angka 1 sampai
+                        20 menggunakan gambar, warna, audio, video dan latihan.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+                        🎯 Tujuan Pembelajaran
+                    </h2>
+
+                    <ul>
+
+                        <li>Mengenal angka 1-20</li>
+
+                        <li>Menyebutkan angka dengan benar</li>
+
+                        <li>Mencocokkan angka dan jumlah benda</li>
+
+                        <li>Berlatih menghitung sederhana</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+                        📚 Capaian Pembelajaran
+                    </h2>
+
+                    <p>
+
+                        Peserta didik mampu mengenal lambang bilangan,
+                        menghubungkan lambang bilangan dengan jumlah benda,
+                        serta menggunakannya dalam kehidupan sehari-hari.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <div class="action">
+
+                    <h2>Media Pembelajaran</h2>
+
+                    <a href="#" class="btn blue">
+
+                        <i class="fa-solid fa-headphones"></i>
+
+                        Dengarkan Audio
+
+                    </a>
+
+                    <a href="#" class="btn red">
+
+                        <i class="fa-solid fa-circle-play"></i>
+
+                        Video Pembelajaran
+
+                    </a>
+
+                    <a href="#" class="btn green">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        Download Modul
+
+                    </a>
+
+                    <a href="#" class="btn purple">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                        AR Learning
+
+                    </a>
+
+                    <a href="#" class="btn orange">
+
+                        <i class="fa-solid fa-clipboard-question"></i>
+
+                        Kerjakan Quiz
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Latihan -->
+
+        <section class="latihan">
+
+            <h2>Latihan Singkat</h2>
+
+            <div class="question">
+
+                <img src="../assets/images/angka5.png">
+
+                <h3>Angka berapa ini?</h3>
+
+                <button>3</button>
+
+                <button>5</button>
+
+                <button>8</button>
+
+            </div>
+
+
+<div class="controls">
+
+<button onclick="playText()">
+    <i class="fa-solid fa-play"></i>
+</button>
+
+<button onclick="pauseText()">
+    <i class="fa-solid fa-pause"></i>
+</button>
+
+<button onclick="resumeText()">
+    <i class="fa-solid fa-forward-step"></i>
+</button>
+
+<button onclick="stopText()">
+    <i class="fa-solid fa-stop"></i>
+</button>
+
+</div>
+
+<div class="speed">
+
+<label>Kecepatan</label>
+
+<select onchange="speed(this.value)">
+
+<option value="0.5">0.5x</option>
+<option value="1" selected>1x</option>
+<option value="1.5">1.5x</option>
+<option value="2">2x</option>
+
+</select>
+
+</div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+/* ======================================
+   EDUABLENET DASHBOARD
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    display:flex;
+}
+
+/* ==========================
+SIDEBAR
+========================== */
+
+.sidebar{
+    width:270px;
+    height:100vh;
+    background:#2563eb;
+    position:fixed;
+    left:0;
+    top:0;
+    color:white;
+    padding:30px 25px;
+    overflow:auto;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:45px;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:15px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px 18px;
+    border-radius:14px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.15);
+}
+
+.sidebar .active a{
+    background:white;
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* ==========================
+CONTENT
+========================== */
+
+.content{
+    margin-left:270px;
+    width:calc(100% - 270px);
+    padding:35px;
+}
+
+/* ==========================
+TOPBAR
+========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.topbar h1{
+    font-size:32px;
+    color:#1f2937;
+}
+
+.topbar p{
+    color:#6b7280;
+    margin-top:6px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:white;
+    padding:12px 20px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.profile img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.profile h4{
+    color:#1f2937;
+}
+
+.profile span{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* ==========================
+STAT CARD
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:45px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    padding:30px;
+    box-shadow:0 12px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card h2{
+    font-size:36px;
+    color:#111827;
+}
+
+.card p{
+    margin-top:8px;
+    color:#6b7280;
+}
+
+/* ==========================
+QUICK MENU
+========================== */
+
+.quick{
+    margin-bottom:45px;
+}
+
+.quick h2{
+    margin-bottom:25px;
+    color:#1f2937;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.quick-grid a{
+    background:white;
+    border-radius:20px;
+    text-decoration:none;
+    color:#374151;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.quick-grid a:hover{
+    transform:translateY(-8px);
+    background:#2563eb;
+    color:white;
+}
+
+.quick-grid i{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+/* ==========================
+MATERI
+========================== */
+
+.title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.title h2{
+    color:#1f2937;
+}
+
+.title a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.materi-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.materi-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.materi-card:hover{
+    transform:translateY(-8px);
+}
+
+.materi-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.materi-card h3{
+    padding:20px 20px 10px;
+    color:#111827;
+}
+
+.materi-card p{
+    padding:0 20px;
+    color:#6b7280;
+    line-height:1.7;
+}
+
+.materi-card button{
+    margin:20px;
+    width:calc(100% - 40px);
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.materi-card button:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+.quick-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.materi-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.sidebar{
+left:-270px;
+}
+
+.content{
+margin-left:0;
+width:100%;
+}
+
+.topbar{
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.quick-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.materi-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.quick-grid{
+grid-template-columns:1fr;
+}
+
+.profile{
+width:100%;
+justify-content:center;
+}
+
+.topbar h1{
+font-size:26px;
+}
+
+}
